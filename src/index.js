@@ -10,7 +10,7 @@ app.use(express.json());
 const connectDb = require('./config/connection')
 connectDb();
 
-const dataRoutes = require('./router/salesDataRoutes');
+const dataRoutes = require('./routes/salesDataRoutes');
 app.use('/api/',dataRoutes);
 
 app.listen(PORT,()=>{
