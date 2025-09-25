@@ -1,7 +1,6 @@
 const express = require('express');
 const {insertPgMonitoringlogs,getPgMonitoringLogs,salesAggregate} = require('../controllers/'); 
 const { salesAggregateOverall } = require('../services/');
-const {validateSaleData} = require('../Middlewares/index')
 const router = express.Router();
 
 router.get('/saleData',getPgMonitoringLogs);
